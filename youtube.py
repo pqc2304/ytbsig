@@ -1,3 +1,6 @@
+#Github https://github.com/pqc2304/ytbsig
+#Facebook https://www.facebook.com/pqc2304
+#Bili
 import requests 
 import execjs
 import json
@@ -31,7 +34,7 @@ class YTB():
         return b
     
     def gd(a):
-      b = execjs.compile(open('./GD.js').read()).call('dE',a)
+      b = execjs.compile(open('./GD.js').read()).call('eE',a)
       return b
     
     def sig(a):
@@ -40,9 +43,9 @@ class YTB():
         d = b.split('url=')[1]
         e = YTB.gd(c)
         g = d+'&alr=yes&sig='+e
-        h = requests.get(g).text
-        return h
-        #return g
+        #h = requests.get(g).text
+        #return h
+        return g
         
     def main_ba(a):
         d = a.split('viewCount":"')[1].split('"')[0]
