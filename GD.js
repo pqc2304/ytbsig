@@ -1,25 +1,23 @@
 var eE = function (a) {
     a = a.split("");
-    dE.gd(a, 31);
-    dE.w7(a, 54);
-    dE.gd(a, 3);
-    dE.ev(a, 2);
-    dE.w7(a, 24);
-    dE.w7(a, 8);
-    dE.ev(a, 1);
-    dE.gd(a, 70);
+    gE.wF(a, 15);
+    gE.kf(a, 36);
+    gE.dx(a, 1);
+    gE.wF(a, 66);
+    gE.wF(a, 24);
+    gE.dx(a, 2);
     return a.join("");
 };
-var dE = {
-    w7: function (a, b) {
+var gE = {
+    kf: function (a) {
+        a.reverse();
+    },
+    wF: function (a, b) {
         var c = a[0];
         a[0] = a[b % a.length];
         a[b % a.length] = c;
     },
-    gd: function (a) {
-        a.reverse();
-    },
-    ev: function (a, b) {
+    dx: function (a, b) {
         a.splice(0, b);
     },
 };
